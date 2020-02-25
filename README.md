@@ -1,2 +1,2 @@
 # interview-static-site
-Creating a hello world style static site for an interview 
+A basic hello world website deployed to AWS (Done for an interview)
