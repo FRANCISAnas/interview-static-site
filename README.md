@@ -20,6 +20,37 @@ A basic hello world website deployed to AWS (Done for an interview)
 - Look into scalability
 - Document terraform creation process
 
+## Requirements
+To work on and deploy the website you will need the following installed 
+- GNU Make
+- AWS CLI (with credentials for your AWS Account configured)
+
+To build the website;s infrastructure you will need
+- AWS CLI (with credentials for your AWS Account configured)
+- Terraform
+
+## Deploy Website
+To deploy the site, run the following commands
+
+    make deploy
+
+This will sync the files in [src](src) with the s3 bucket. It will remove files that are on s3 but not in [src](src).
+It will also print out the list of files currently on s3 so you can confirm the files you expect are there.
+
 ### Terraform
-Note: The Terraform state is stored in s3 and the bucket is not created within this code.
-Generally these buckets are shared across many projects, so storing it within this codebase would be unnecessary.
+    Note: The Terraform state is stored in s3 and the bucket is not created within this code.
+    Generally these buckets are shared across many projects, so storing it within this codebase would be unnecessary.
+
+To build your application infrastructure run the following make commands:
+
+To initialise your terraform state:
+
+    make infrastructure_init  
+    
+To check if there are any changes that need applying
+
+    make infrastructure_plan
+
+To apply changes (or build the infrastructure from scratch)
+
+    make infrastructure_apply
