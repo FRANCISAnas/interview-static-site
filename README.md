@@ -1,6 +1,8 @@
 # interview-static-site
 A basic hello world website deployed to AWS (Done for an interview)
 
+View the site here: http://will2bill-test-website.s3-website-eu-west-1.amazonaws.com/
+
 ### Requirments
 - Website has text and an image
 - Website is in AWS
