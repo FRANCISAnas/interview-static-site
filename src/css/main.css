@@ -8,6 +8,12 @@ h1 {
     font-family: "Verdana", Verdana, sans-serif;
 }
 
+p {
+    color: black;
+    text-align: center;
+    font-family: "Verdana", Verdana, sans-serif;
+}
+
 img {
     display: block;
     margin-left: auto;
