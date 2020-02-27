@@ -8,10 +8,10 @@ via Terraform.
 
 ## Contents
 1. [Requirements](#Requirements)
-2. [Deploy Website](#Deploy Website)
+2. [Deploy](#Deploy)
 3. [Terraform](#Terraform)
 4. [Scalability](#Scalability)
-5. [Monitoring and Alerts](#Monitoring and Alerts)
+5. [Monitoring](#Monitoring)
 6. [Security](#Security)
 7. [Automation](#Automation)
 
@@ -24,7 +24,7 @@ To build the website;s infrastructure you will need
 - AWS CLI (with credentials for your AWS Account configured)
 - Terraform
 
-## Deploy Website
+## Deploy
 To deploy the site, run the following commands
 
     make deploy
@@ -66,7 +66,7 @@ This will allow you to make your website's files available from data centers eve
 served from a source near your user. 
 [You can find an example of how to configure cloudfront in Terraform here](https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html).
 
-## Monitoring and Alerts
+## Monitoring
 You can configure the s3 bucket to include metrics like number and type of requests or 4xx errors. 
 Details on the different metrics available are available 
 [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/cloudwatch-monitoring.html) and the configuration guide 
