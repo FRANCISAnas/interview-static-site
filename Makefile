@@ -13,13 +13,13 @@ check_files:
 	@aws s3 ls $(S3_BUCKET) --recursive --human-readable --summarize
 
 infrastructure_init:
-	cd infrastructure &\
+	cd infrastructure; \
 	terraform init
 
 infrastructure_plan:
-	cd infrastructure &\
+	cd infrastructure; \
 	terraform plan
 
 infrastructure_apply:
-	cd infrastructure &\
+	cd infrastructure; \
 	terraform apply
